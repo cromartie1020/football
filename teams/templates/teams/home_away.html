@@ -1,0 +1,30 @@
+
+{% extends 'teams/base.html' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content  %}
+<!--
+    Select the home team and away team
+    for the upcomming week.
+    Select the start time and date.
+    Put the above information in a database.
+
+
+-->
+  <label for="home_team">Select a Home Team</label>
+  <select name="home" id="home_team">
+    {% for team in teams %}
+      <option value="{{ team }}">{{ team }}</option>
+    {% endfor %}  
+  </select>
+  <br />
+  <label for="away_team"> Select an Away Team</label>
+  <select name="away" id="away_team">
+    {% for team in teams %}
+      <option value="{{ team }}">{{ team }}</option>
+    {% endfor %}  
+  </select>
+{% endblock %}
