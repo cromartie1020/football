@@ -15,11 +15,13 @@ urlpatterns = [
     path('confirm_selections/',views.confirm_selections, name='confirm_selections'),
     path('pick_week/',views.pick_week,name='pick_week'),
     path('update/<int:id>/', views.update, name='update'),
-    #path('pick_week/pick_year/',views.pick_week_year, name = 'pick_week_year'),
     path('select_winners/',views.select_winners,name='select_winners'),
     path('save_winners/',views.save_winners,name='save_winners'),  
     path('week/',views.winner_select_view, name='winner_select'),  
     path('list/', views.winnerPickList, name='list'),
+    path('teamNew/', views.teamNew, name='teamNew'),
+    path('winnerPickNew/<int:id>/', views.winnerPickNew, name='winnerPickNew'),
+    
 
    
     

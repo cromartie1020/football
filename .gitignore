@@ -5,4 +5,7 @@ db.sqlite3
 *.pyc
 media
 *.bak
+venv/
+football/settings.py
+
 
